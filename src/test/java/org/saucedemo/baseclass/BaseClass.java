@@ -1,4 +1,4 @@
-package org.agrichains.com;
+package org.saucedemo.baseclass;
 
 import java.time.Duration;
 
@@ -80,8 +80,7 @@ public class BaseClass {
 	}
 
 	public static void visibilityOfElement(WebElement element) {
-		visibilityOfElement(element);
-		WebDriverWait driverWait = new WebDriverWait(driver, Duration.ofSeconds(60));
+        WebDriverWait driverWait = new WebDriverWait(driver, Duration.ofSeconds(60));
 		driverWait.until(ExpectedConditions.visibilityOf(element));
 	}
 
